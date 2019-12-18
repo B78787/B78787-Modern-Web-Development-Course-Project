@@ -1,0 +1,110 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height:1.5;
+  padding:0;
+  margin:0;
+  background-color: #ADD8E6;
+}
+
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+/* Header */
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:10px;
+  min-height:50px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+.content {
+  max-width: 750px;
+  margin: center;
+  background: #ADD8E6;
+  padding: 10px;
+}
+
+#projectID {
+    margin:auto;
+    width:90%;
+
+}
+
+/* Main section of the page */
+#projectID h1{
+  margin-top:50px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#projectID h3{
+  margin-top:30px;
+  font-size:17px;
+  color:blue;
+  font-weight: bold;
+}
+
+#projectID ul {
+  margin-left: 50px;
+  font-size: 16px;
+  max-width: 800px;
+}
+
+#projectID #pfirst {
+  margin-top: 50px;
+  font-size: 17px;
+  max-width: 200px;
+}
+
+/*  Scroll boxes for skills */
+#projectID .scrollPortion {
+    border: 1px solid black;
+    font-size: 16px;
+    color:black;
+    font-weight: bold;
+    max-width: 750px;
+    height: 140px;
+    padding: 10px;
+    overflow: scroll;
+  }

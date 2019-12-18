@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Some wisdom here">
+    <meta name="keywords" content="Enthusiasm is the way to happiness">
+    <meta name="author" content="Juha Koski">
+    <title>Juha's Web Pages | Welcome</title>
+    <link rel="stylesheet" href="./Styles/skills.css">
+
+  </head>
+  <body>
+    <header>
+      <!-- Navigation bar -->
+      <div class="container">
+        <nav>
+          <u1>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li class="current"><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </u1>
+        </nav>
+      </div>
+    </header>
+
+    <div id="skillsID" class="content">
+
+      <h1>Some of my Skills</h1>
+
+      <!-- Table where the skills and related pictures are brought -->
+      <!-- Four skills are initialized when calling the page. New skills with related pictures can be added -->
+      <!-- New skills are added to the beginning of the table. For the related picture the link needs to be given -->
+      <table id="myTable"></table>
+      <br><br><br>
+      <script src="js/skills.js"></script>
+
+      <h3>Add a new skill and a link to the related picture as a first row by filling the fields below:</h3>
+
+      <!-- New skill and the related picture are inserted in the page -->
+      <form>
+          1. A new skill description:
+          <input type="text" id="mySkill" name="new_skill" value="Enter new skill" size="40"  maxlength="100">
+          <br><br>
+          2. Link to related picture: <input type="text" id="relatedPicture" name="link_to_skill_picturel" value="Enter link to related picture" size="40"  maxlength="100">
+          <br>
+      </form>
+
+      <br>
+
+      <!-- There are buttons to add a new skill and a button to remove the last one  -->
+      <button type="button" class="button1"  onclick="tableInsertNewRowFunction()">Add a new first row</button>
+      <button type="button" class="button1" onclick="tableRowDeleteFunction()">Remove the last row</button>
+
+      <!-- buttons for CVs in pdf- and doc-fomat  -->
+      <br>
+      <a href="./Documents/Juha Koski CV 2017.12.06.pdf" class="button" target="_blank">My Resume (pdf)</a>
+      <a href="./Documents/Juha Koski CV 2017.12.06.doc" class="button">My Resume (doc)</a>
+
+    </div>
+  </body>
+  </html>

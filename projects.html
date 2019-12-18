@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Some wisdom here">
+    <meta name="keywords" content="Enthusiasm is the way to happiness">
+    <meta name="author" content="Juha Koski">
+    <title>Juha's Web Pages | Welcome</title>
+    <link rel="stylesheet" href="./Styles/projects.css">
+    <script src="js/projects.js"></script>
+
+  </head>
+  <body>
+    <!-- Javascript event shows Wellcome alert when the page has been loaded -->
+    <body onload="pageLoadedFunction()">
+
+    <header>
+      <!-- Navigation bar -->
+      <div class="container">
+        <nav>
+          <u1>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li class="current"><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </u1>
+        </nav>
+      </div>
+    </header>
+
+    <div id="projectID" class="content">
+
+      <!-- The page is initialized with three projects which are presented in scroll boxes -->
+      <!-- Javascript scroll event is demostrated by counting the total of the scrolled rows and displaying it on the bottom of the page -->
+      <!-- First project is hovered to red when the cursor goes over the project -->
+
+      <h3>1. 		Specialist in Payment Cards Ecosystem and Cards Related Projects - Danske Bank</h3>
+
+      <div id="firstScrollDiv" class="scrollPortion" onscroll="myFunction()" onmouseover="mouseOver()" onmouseout="mouseOut()">
+          Part of Bank’s payment cards team which in an agile manner took care of payment cards ICT ecosystem (ICT specs,
+          proof-of-concept, building, implementation, support, security, digital card systems).
+          <br><br>
+          Time involved: 10/2007-03/2017
+          <br><br>
+          Skills:
+          <ui>
+              <li>ICT project management</li>
+              <li>Requirement and process analysis</li>
+              <li>Digital payment card systems</li>
+              <li>Card technology</li>
+              <li>Cross-country co-operation (Danske Bank DK, SW, NO, India, Lithuania)</li>
+              <li>Training/coaching</li>
+              <li>Card security (eBanking/Mobilebanking, transactions, PCIDSS)</li>
+              <li>Testing, piloting, Implementation</li>
+              <li>MobileBanking card functionality</li>
+          </ul>
+
+      </div>
+
+      <h3>2. 	ICT Project Manager and support– Corporate credit card eInvoice - Danske Bank</h3>
+
+      <div id="firstScrollDiv" class="scrollPortion" onscroll="myFunction()" onmouseover="mouseOver()" onmouseout="mouseOut()">
+          The project created the credit card eInvoice for corporate customers in XML and PDF formats. My role was to
+          manage requirement analysis (for Finland DB), process analysis, proof-of-concept, testing, piloting with external
+          customers, training and implementation phases.
+          <br><br>
+          Time involved: 10/2014-08/2016
+          <br><br>
+          Skills:
+          <ui>
+              <li>ICT project management</li>
+              <li>Requirement and process analysis</li>
+              <li>XML</li>
+              <li>Webservice</li>
+              <li>Finvoice invoicing standard</li>
+              <li>Training/coaching</li>
+              <li>Security assessment</li>
+          </ul>
+
+      </div>
+
+
+      <h3>3. 	ICT Project Manager – Merchant services Cross-settlement feature with NETS - Danske Bank</h3>
+
+      <div class="scrollPortion" onscroll="myFunction()">ICT project manager in co-operation project with NETS Finland. The
+          cross-settlement feature gives the merchants the option to pay the card transaction fees to NETS on monthly basis.
+          The extranet connection to NETS for the bank was also implemented.
+          <br><br>
+          Time involved: 04/2013-09/2014
+          <br><br>
+          Skills:
+          <ui>
+              <li>ICT project management</li>
+              <li>Requirement and process analysis</li>
+              <li>Proof-of-concept </li>
+              <li>File transfer technology</li>
+              <li>Cross-country co-operation (NETS FI, Danske Bank DK, India)</li>
+              <li>Training/coaching</li>
+              <li>Security assessment</li>
+          </ul>
+      </div>
+
+      <p>Scrolled <span id="scrolledRows">0</span> rows in total.</p>
+
+    </div>
+  </body>
+  </html>
